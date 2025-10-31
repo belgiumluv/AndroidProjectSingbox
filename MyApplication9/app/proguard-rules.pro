@@ -1,0 +1,10 @@
+-keep class com.example.myapplication.DummyPlatformInterface { *; }
+-keep class io.nekohasekai.libbox.** { *; }
+-keep interface io.nekohasekai.libbox.PlatformInterface { *; }
+-keep class io.nekohasekai.libbox.** { *; }
+-keep class com.example.myapplication.DummyPlatformInterface { *; }
+-keep interface io.nekohasekai.libbox.PlatformInterface { *; }
+-keepclassmembers class * implements io.nekohasekai.libbox.PlatformInterface { *; }
+-keep class io.nekohasekai.libbox.** { *; }
+-keep class go.** { *; }
+-keep class ** extends go.Seq$Proxy { *; }

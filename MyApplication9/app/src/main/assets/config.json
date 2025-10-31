@@ -1,0 +1,758 @@
+{
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "Select",
+      "outbounds": [
+        "Auto",
+        "www.habbo.com reality tcp direct vless \u00a7 443 2",
+        "haddify.duckdns.org tls WS direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls WS direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls WS direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls httpupgrade direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls httpupgrade direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct vmess \u00a7 443 3",
+        "haddify.duckdns.org http WS direct vless \u00a7 80 3",
+        "haddify.duckdns.org http WS direct vmess \u00a7 80 3",
+        "haddify.duckdns.org http httpupgrade direct vless \u00a7 80 3",
+        "haddify.duckdns.org http httpupgrade direct vmess \u00a7 80 3",
+        "haddify.duckdns.org http tcp direct vless \u00a7 80 3",
+        "haddify.duckdns.org http tcp direct vmess \u00a7 80 3",
+        "haddify.duckdns.org ShadowSocks2022 \u00a7 44405 3",
+        "haddify.duckdns.org ShadowTLS \u00a7 443 3",
+        "haddify.duckdns.org SSH \u00a7 49180 3",
+        "haddify.duckdns.org SSH \u00a7 49180 3+UDP",
+        "haddify.duckdns.org TUIC \u00a7 55851 3",
+        "haddify.duckdns.org Hysteria2 \u00a7 50062 3"
+      ],
+      "default": "Auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "Auto",
+      "outbounds": [
+        "www.habbo.com reality tcp direct vless \u00a7 443 2",
+        "haddify.duckdns.org tls WS direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls WS direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls WS direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls httpupgrade direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls httpupgrade direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls tcp direct vmess \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct vless \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct trojan \u00a7 443 3",
+        "haddify.duckdns.org tls grpc direct vmess \u00a7 443 3",
+        "haddify.duckdns.org http WS direct vless \u00a7 80 3",
+        "haddify.duckdns.org http WS direct vmess \u00a7 80 3",
+        "haddify.duckdns.org http httpupgrade direct vless \u00a7 80 3",
+        "haddify.duckdns.org http httpupgrade direct vmess \u00a7 80 3",
+        "haddify.duckdns.org http tcp direct vless \u00a7 80 3",
+        "haddify.duckdns.org http tcp direct vmess \u00a7 80 3",
+        "haddify.duckdns.org ShadowSocks2022 \u00a7 44405 3",
+        "haddify.duckdns.org ShadowTLS \u00a7 443 3",
+        "haddify.duckdns.org ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7",
+        "haddify.duckdns.org SSH \u00a7 49180 3",
+        "haddify.duckdns.org SSH \u00a7 49180 3+UDP",
+        "haddify.duckdns.org TUIC \u00a7 55851 3",
+        "haddify.duckdns.org Hysteria2 \u00a7 50062 3"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "10m",
+      "tolerance": 200
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "bypass",
+      "type": "direct"
+    },
+    {
+      "tag": "www.habbo.com reality tcp direct vless \u00a7 443 2",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.habbo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kaz3zy5QOeLY2DGJoj7CjD9IpL9yaBSYhl_eq-oFGTc",
+          "short_id": "e9cfffa5c1344a"
+        },
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "flow": "xtls-rprx-vision",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "haddify.duckdns.org tls WS direct vless \u00a7 443 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/UoJNTW5v2IYEEHM606k4WLq",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls WS direct trojan \u00a7 443 3",
+      "type": "trojan",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "password": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NrFXqSBmz34EHM606k4WLq",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls WS direct vmess \u00a7 443 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/gaYhL7UdmNEHM606k4WLq",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls httpupgrade direct vless \u00a7 443 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/UoJNTW5v2IYE7RFSFKNIpD30cK",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls httpupgrade direct vmess \u00a7 443 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/gaYhL7UdmN7RFSFKNIpD30cK",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls tcp direct vless \u00a7 443 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http",
+        "path": "/UoJNTW5v2IYEKihdGzPD",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "host": [
+          "haddify.duckdns.org"
+        ]
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls tcp direct trojan \u00a7 443 3",
+      "type": "trojan",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "password": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "http",
+        "path": "/NrFXqSBmz34KihdGzPD",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "host": [
+          "haddify.duckdns.org"
+        ]
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls tcp direct vmess \u00a7 443 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http",
+        "path": "/gaYhL7UdmNKihdGzPD",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "host": [
+          "haddify.duckdns.org"
+        ]
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls grpc direct vless \u00a7 443 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "UoJNTW5v2IYED9I0b6xjqEbt",
+        "idle_timeout": "115s",
+        "ping_timeout": "15s"
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls grpc direct trojan \u00a7 443 3",
+      "type": "trojan",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "password": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "NrFXqSBmz34D9I0b6xjqEbt",
+        "idle_timeout": "115s",
+        "ping_timeout": "15s"
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org tls grpc direct vmess \u00a7 443 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "gaYhL7UdmND9I0b6xjqEbt",
+        "idle_timeout": "115s",
+        "ping_timeout": "15s"
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http WS direct vless \u00a7 80 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/UoJNTW5v2IYEEHM606k4WLq",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http WS direct vmess \u00a7 80 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/gaYhL7UdmNEHM606k4WLq",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http httpupgrade direct vless \u00a7 80 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/UoJNTW5v2IYE7RFSFKNIpD30cK",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http httpupgrade direct vmess \u00a7 80 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/gaYhL7UdmN7RFSFKNIpD30cK",
+        "headers": {
+          "Host": "haddify.duckdns.org"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http tcp direct vless \u00a7 80 3",
+      "type": "vless",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http",
+        "path": "/UoJNTW5v2IYEKihdGzPD",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "host": [
+          "haddify.duckdns.org"
+        ]
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org http tcp direct vmess \u00a7 80 3",
+      "type": "vmess",
+      "server": "31.128.32.165",
+      "server_port": 80,
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "alter_id": 0,
+      "security": "auto",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http",
+        "path": "/gaYhL7UdmNKihdGzPD",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s",
+        "host": [
+          "haddify.duckdns.org"
+        ]
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org ShadowSocks2022 \u00a7 44405 3",
+      "type": "shadowsocks",
+      "server": "31.128.32.165",
+      "server_port": 44405,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ZDUwOGQzYWU3ODZjNGVhOWJkODQ5MjhkOTZlNmQ3MGM=:ZDA5Yjk1MGJiNjRkNGRhZGExYTg3YzNiNjNkZWYzOWU=",
+      "udp_over_tcp": {
+        "enabled": true,
+        "version": 2
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org ShadowTLS \u00a7 443 3",
+      "type": "shadowsocks",
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "ZDUwOGQzYWU3ODZjNGVhOWJkODQ5MjhkOTZlNmQ3MGM=:ZDA5Yjk1MGJiNjRkNGRhZGExYTg3YzNiNjNkZWYzOWU=",
+      "udp_over_tcp": {
+        "enabled": true,
+        "version": 2
+      },
+      "detour": "haddify.duckdns.org ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7"
+    },
+    {
+      "type": "shadowtls",
+      "tag": "haddify.duckdns.org ShadowTLS \u00a7 443 3_shadowtls-out \u00a7hide\u00a7",
+      "server": "31.128.32.165",
+      "server_port": 443,
+      "version": 3,
+      "password": "d508d3ae-786c-4ea9-bd84-928d96e6d70c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.shamela.ws",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "haddify.duckdns.org SSH \u00a7 49180 3",
+      "type": "ssh",
+      "server": "31.128.32.165",
+      "server_port": 49180,
+      "user": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "private_key": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUx\nOQAAACCjpDlERxuUQrFCv6AHooJyqJOmLL8nTKG0BSAdWaWOowAAAIj/fP6a/3z+mgAAAAtzc2gt\nZWQyNTUxOQAAACCjpDlERxuUQrFCv6AHooJyqJOmLL8nTKG0BSAdWaWOowAAAEALqb64XJhO8NQb\nX7jvECJ9Eg/+y4YWEyEmUavieBkOEKOkOURHG5RCsUK/oAeignKok6YsvydMobQFIB1ZpY6jAAAA\nAAECAwQF\n-----END OPENSSH PRIVATE KEY-----\n",
+      "host_key": [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOynNpMP3fjdE/GVeNl7Tn9o8ehhLY80M1Lor6L0/T2r hiddify-panel@xbplbzisxx\n",
+        "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBI0tJ6ESSiXc7xtJLOxfbdHwKb3pe+RgwffT5JwEvputAGiAlWtUJHdsRta02IDaTY4m8M0q4duyhx5DN/ajjrw= hiddify-panel@xbplbzisxx\n",
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCrFrHUHyzmbIZz31ytibG1yXGCU4i7fXOYiO3JOpLTp/I0GjQFQM3HQpZBUpBqn/kLGUMd8ZbF7Xuv6GrDf+nSzcgOPuiRHDmY5nRJOEN0W5PO0hGJMQjaWQKOevutozNgAvEWlR13d0gnzKyotU1lrDFXuXeozxRlrKd7S/goI2+i86zIuLzUoCRDNJgOPP+lUV84iSAzQH5Tzaets+Ua2x0RFRF4q369kYC+w5f4T6CN5H4zzjh3zvSE7EyjIAFlZl0xg3vVQNOKCWp9wabnNNQSmjf5Ha1T6uBaQwJ81lyVbQzVUuWS9mN3wofZr3mngDVARhTFzXgkxAqVGgS1Kr4I/A2EYF7Y2ajzJEwDdH476TcwehD7tMOJV/GRFz7x0JqS44PxACe1kPmWzvmTpa212c44WiSRZ5YDs+8y0Oy9XQ00bCKiJtbpPle24QpJqqLH/gTlywkSSzXIhW4QaestfoOHhsk9lGSPwgUb66jp8grvv48sN9FJJs9IVR8= hiddify-panel@xbplbzisxx\n"
+      ]
+    },
+    {
+      "type": "socks",
+      "tag": "haddify.duckdns.org SSH \u00a7 49180 3+UDP",
+      "server": "127.0.0.1",
+      "server_port": 2000,
+      "version": "5",
+      "udp_over_tcp": true,
+      "network": "tcp",
+      "detour": "haddify.duckdns.org SSH \u00a7 49180 3"
+    },
+    {
+      "tag": "haddify.duckdns.org TUIC \u00a7 55851 3",
+      "type": "tuic",
+      "server": "31.128.32.165",
+      "server_port": 55851,
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "cubic",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": true,
+      "heartbeat": "10s",
+      "password": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "uuid": "d09b950b-b64d-4dad-a1a8-7c3b63def39e"
+    },
+    {
+      "tag": "haddify.duckdns.org Hysteria2 \u00a7 50062 3",
+      "type": "hysteria2",
+      "server": "31.128.32.165",
+      "server_port": 50062,
+      "tls": {
+        "enabled": true,
+        "server_name": "haddify.duckdns.org",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "up_mbps": null,
+      "down_mbps": null,
+      "obfs": {
+        "type": "salamander",
+        "password": "4VAS0rQI0PPsXbQgjN1"
+      },
+      "password": "d09b950b-b64d-4dad-a1a8-7c3b63def39e"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "override_android_vpn": true,
+    "final": "Select",
+    "rule_set": [],
+    "rules": [
+      {
+        "inbound": ["tun-in", "mixed-in"],
+        "action": "route-options",
+        "tls_record_fragment": true,
+        "tls_fragment_fallback_delay": "400ms"
+      },
+      {
+        "inbound": [
+          "tun-in",
+          "mixed-in"
+        ],
+        "port": [
+          53
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "inbound": [
+          "dns-in"
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "inbound": [
+          "tun-in",
+          "mixed-in"
+        ],
+        "action": "sniff",
+        "timeout": "1s"
+      },
+      {
+        "protocol": "quic",
+        "port": [
+          443
+        ],
+        "action": "reject"
+      },
+      {
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "outbound": "block",
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ]
+      }
+    ]
+  },
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
+    },
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "d09b950b-b64d-4dad-a1a8-7c3b63def39e",
+      "store_fakeip": true
+    }
+  },
+  "dns": {
+    "servers": [
+      {
+        "address": "tcp://1.1.1.1",
+        "address_resolver": "dns-local",
+        "strategy": "prefer_ipv4",
+        "tag": "dns-remote",
+        "detour": "Select"
+      },
+      {
+        "address": "8.8.8.8",
+        "detour": "direct",
+        "tag": "dns-local"
+      },
+      {
+        "address": "rcode://success",
+        "tag": "dns-block"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "github.com",
+          "githubusercontent.com",
+          "raw.githubusercontent.com",
+          "1.1.1.1",
+          "www.habbo.com",
+          "haddify.duckdns.org"
+        ],
+        "server": "dns-local"
+      },
+      {
+        "outbound": "direct",
+        "server": "dns-local"
+      }
+    ],
+    "final": "dns-local",
+    "reverse_mapping": true,
+    "strategy": "prefer_ipv4",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "listen_port": 6450,
+      "override_address": "8.8.8.8",
+      "override_port": 53,
+      "tag": "dns-in",
+      "type": "direct"
+    },
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "tun0",
+      "address": [
+        "172.19.0.2/30"
+      ],
+      "mtu": 1400,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "gvisor",
+      "endpoint_independent_nat": true
+    },
+    {
+      "domain_strategy": "prefer_ipv4",
+      "listen": "127.0.0.1",
+      "listen_port": 2334,
+      "sniff": true,
+      "sniff_override_destination": false,
+      "tag": "mixed-in",
+      "type": "mixed"
+    }
+  ]
+}
